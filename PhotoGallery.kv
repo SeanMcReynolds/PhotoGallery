@@ -1,0 +1,22 @@
+Display
+
+<Display>:
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "Photos :)"
+            font_size: 50
+        Image:
+            id: image
+            source: root.display_images()
+            size_hint: 1,6
+        BoxLayout:
+            Button:
+                text: "<<<"
+                background_color: "black"
+                font_size: 50
+            Button:
+                text: ">>>"
+                background_color: "black"
+                font_size: 50
+                on_release: root.advance()
